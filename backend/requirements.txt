@@ -1,0 +1,8 @@
+openai
+openai[datalib]>=1.3.6
+tiktoken
+uvicorn
+aiohttp
+fastapi
+pydantic
+spacy

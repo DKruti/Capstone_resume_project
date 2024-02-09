@@ -1,0 +1,151 @@
+.App {
+  background-color: #FAF3EA;
+  text-align: center;
+  color: #0e3c26;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  font-family: "Gill Sans", sans-serif;
+}
+.toggle-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.toggle-button-group {
+  display: flex;
+  background-color: #EDE0D1;
+  justify-content:space-evenly;
+  border-radius: 10px;
+}
+
+.toggle-button-group button {
+  border: none;
+  padding: 15px 50px; 
+  cursor: pointer;
+  background-color: transparent; /* Inactive state color */
+  transition: background-color 0.4s ease;
+  text-align: center;
+  margin: 5px ;
+  border-radius: 5px;
+  color:#888;
+  font-weight: 600;
+}
+
+
+.toggle-button-group button.active {
+  background-color:#A69986;
+  color:#fff;
+}
+
+.toggle-button-group button:hover {
+  color: white;
+}
+
+.file-uploader-section {
+  width: 20%;
+  background-color: #EDE1D1; /* Any light background for contrast */
+  padding: 20px;
+  overflow-y: auto; /* For potential scrolling if content exceeds the viewport height */
+}
+
+.chat-section {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.message.user {
+  /* styles for user messages */
+}
+
+.message.chatgpt {
+  /* styles for ChatGPT messages */
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #FCFAF6;
+  height: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px #A69986;
+}
+
+textarea {
+  flex: 1;
+  flex-grow:3;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  border-radius: 10px;
+  color: #0e3c26;
+  resize: none;
+  overflow: visible;
+  overflow-y: auto;
+  background: transparent;
+  height:20px;
+}
+
+/* ::placeholder {
+  color:rgb(194, 183, 183);
+  opacity: 0.9;
+  
+} */
+
+.input-area button {
+  padding: 10px 20px;
+  border: none;
+  background:transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: #FAF3EA;
+  border-radius: 30px;
+}
+
+.toggle-button-group button .upload-icon-container svg {
+  width:32px;
+  height:20px;
+  fill: #0e3c26;
+}
+
+.toggle-button-group button:hover .upload-icon-container svg {
+  fill: white;
+}
+
+.toggle-button-group button.active .upload-icon-container svg {
+  fill: white;
+}
+
+.logo-icon {
+  height: 100px;
+  width:100px;
+  fill: #0e3c26;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 14px;
+}
